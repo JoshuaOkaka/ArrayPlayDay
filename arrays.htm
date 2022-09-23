@@ -52,5 +52,13 @@ console.table(inventors_names)
 // sort inventors by birthday, older inventors are placed on top the list .
 const sorted = inventors.sort((a ,b )=> a.year > b.year ? 1 : -1);
 console.table(sorted);
+
+//reduce()
+//we will use the reduce() to compute  the total years all inventor in the array lived.
+const TotalYear = inventors.reduce((total , investors)=>{
+    return total +(investors.passed - investors.year );
+},0)
+console.table(TotalYear)
+
 </script>
 </html>
