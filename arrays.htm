@@ -32,5 +32,14 @@
       'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin', 'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose',
       'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
     ];
+
+    //filters inventors born in the firteen hundred
+    const firteenHundred = inventors.filter(function(inventors){
+        if(inventors.year >= 1500 && inventors.year < 1600){
+            return true 
+        } 
+    })
+    console.table(firteenHundred);
+
 </script>
 </html>
