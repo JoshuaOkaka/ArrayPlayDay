@@ -47,5 +47,10 @@
 const inventors_names = inventors.map( (inventors)=>`${inventors.first} ${inventors.last}`);
 console.table(inventors_names)
 
+
+//sort()
+// sort inventors by birthday, older inventors are placed on top the list .
+const sorted = inventors.sort((a ,b )=> a.year > b.year ? 1 : -1);
+console.table(sorted);
 </script>
 </html>
